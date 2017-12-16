@@ -325,7 +325,7 @@ namespace ts {
                 }
 
                 output += host.getNewLine();
-                output += `${ relativeFileName }(${ firstLine + 1 },${ firstLineChar + 1 }): `;
+                output += `${ relativeFileName }:${ firstLine + 1 }:${ firstLineChar + 1 } - `;
             }
 
             const categoryColor = getCategoryFormat(diagnostic.category);
